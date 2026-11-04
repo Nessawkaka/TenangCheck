@@ -8,11 +8,14 @@ Prototaip untuk **MDEC–KAF Digital Bank Launchpad Accelerator** (KIRO Workshop
 
 ## Ciri utama / Features
 
-- **Semak:** semak mesej (9 contoh), nombor telefon (dengan laporan demo) dan panggilan (4 soalan + demo Pengawal Panggilan).
-- **Lapor:** lapor nombor scammer tanpa log masuk, terus selepas menyemak nombor. Boleh ditarik balik.
-- **Belajar:** 7 tanda scammer, 10 jenis scam dengan sumber rasmi, mitos dan fakta, skrip panggilan, kuiz dan kad kongsi.
-- **Kecemasan:** langkah segera, senarai "Sediakan sebelum menelefon", pilih bank untuk hubungi hotline fraud, dan kenalan dipercayai.
-- BM/EN, 4 saiz tulisan, mod Auto/Terang/Gelap, mesra pembaca skrin dan papan kekunci.
+- **Semak**
+  - **Mesej:** tampal mesej dan dapat verdict (Bahaya, Waspada atau Tiada tanda bahaya) beserta tanda yang dikesan. Ada 2 contoh mesej scam dan 2 contoh mesej sebenar.
+  - **Nombor:** semak nombor dengan laporan demo, lapor nombor scammer tanpa log masuk (boleh ditarik balik), dan senarai amaran terkini.
+  - **Panggilan:** 4 soalan pantas, demo Pengawal Panggilan (skrip automatik), dan mod mikrofon untuk cuba dengan suara sendiri.
+- **Berita dan sumber rasmi:** carousel berita scam terkini dan laman rasmi yang berpusing sendiri, dengan butang ‹ ›.
+- **Belajar:** Ciri-ciri scammer (termasuk contoh skrip panggilan scammer), Jenis scam (10 jenis dengan sumber rasmi), Kuiz, Fakta untuk dikongsi (kad kongsi serta mitos dan fakta), dan Sumber rasmi.
+- **Kecemasan:** langkah segera bernombor dengan butang telefon bank (direktori ABM) dan 997, senarai "Sediakan sebelum menelefon", kenalan dipercayai, dan lapor nombor.
+- BM/EN, 2 saiz tulisan (17px dan 20px), mod terang/gelap, mesra pembaca skrin dan papan kekunci.
 
 ## Cara guna / Run locally
 
@@ -20,18 +23,19 @@ Buka `index.html` dalam mana-mana pelayar web. Tiada build step, tiada backend.
 
 ## Deploy ke GitHub Pages
 
-1. Buat repo awam baharu dan muat naik `index.html`, `README.md` dan `.nojekyll`.
+1. Muat naik `index.html`, `README.md` dan `.nojekyll` ke root repo (bukan dalam folder).
 2. Pergi ke **Settings → Pages**.
 3. Di bawah **Build and deployment**, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, kemudian **Save**.
-4. Tunggu beberapa minit. Pautan akan muncul di halaman yang sama dalam bentuk `https://<username>.github.io/<nama-repo>/`.
+4. Tunggu run dalam tab **Actions** jadi hijau. Pautan akan muncul di **Settings → Pages**.
 
-Pautan terus ke bahagian tertentu: `#nombor`, `#call`, `#kuiz`, `#jenis`, `#mitos`, `#skrip`, `#kongsi`, `#sumber`, `#kecemasan`.
+Pautan terus ke bahagian tertentu: `#semak`, `#nombor`, `#call`, `#belajar`, `#jenis`, `#kuiz`, `#kongsi`, `#sumber`, `#kecemasan`. Pautan lama `#skrip` dan `#mitos` masih berfungsi.
 
 ## Data dan privasi
 
 - Semakan mesej dibuat dalam pelayar menggunakan peraturan berwajaran. Mesej tidak dihantar ke mana-mana.
 - Data laporan ialah **DEMO** (nombor rekaan). Laporan pengguna disimpan dalam `localStorage` peranti itu sahaja.
 - Nombor hotline fraud bank disalin daripada direktori ABM.
+- Berita dalam carousel dikemas kini secara manual (terakhir: 4 Nov 2026).
 
 ## Sumber rasmi
 
